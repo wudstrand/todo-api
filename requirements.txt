@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+SQLAlchemy
+SQLAlchemy-Utils
+sqlalchemy
+pg8000
+psycopg2
