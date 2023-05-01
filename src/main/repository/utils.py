@@ -1,10 +1,17 @@
 import logging
+from typing import List
+
 from src.main.common.connection import Connection
 
 logger = logging.getLogger(__name__)
 
 
-def _execute_transaction(statement, *, returns_data=True, commit=False):
+def _execute_transaction(
+        statement,
+        *,
+        returns_data=True,
+        commit=False
+) -> List[dict]:
     connection = Connection()
     session = connection.get_session()
     try:

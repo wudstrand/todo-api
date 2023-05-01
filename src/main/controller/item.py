@@ -25,7 +25,7 @@ async def create(new_item: ItemRequest) -> ItemResponse:
     return item_service.save_item(new_item)
 
 
-@item_router.put("/{item_id}")
+@item_router.post("/{item_id}")
 async def update(item_id: str, updated_item: ItemRequest) -> ItemResponse:
     return item_service.update_item(item_id, updated_item)
 
