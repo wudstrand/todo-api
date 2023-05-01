@@ -9,7 +9,7 @@ from sqlalchemy.orm import sessionmaker, Session, close_all_sessions
 
 from src.main.common.config.connection import ConnectionConfig
 
-logger = logging.getLogger("slack_app")
+logger = logging.getLogger(__name__)
 
 
 class AbstractConnection(ABC):

@@ -1,7 +1,7 @@
 import logging
 from src.main.common.connection import Connection
 
-logger = logging.getLogger("slack_app")
+logger = logging.getLogger(__name__)
 
 
 def _execute_transaction(statement, *, returns_data=True, commit=False):
